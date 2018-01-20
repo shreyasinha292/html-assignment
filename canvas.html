@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1300" height="600" style= "border : 2px dashed #f70202">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(650,300,200,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "50px Arial";
+ctx.strokeText("SHAPES",10,50);
+
+ctx.moveTo(0,0);
+ctx.lineTo(650,300);
+ctx.stroke();
+ctx.lineTo(1300,0);
+ctx.stroke();
+ctx.moveTo(650,300);
+ctx.lineTo(650,600);
+ctx.stroke();
+
+ctx.moveTo(650,0);
+ctx.lineTo(200,500);
+ctx.stroke();
+ctx.lineTo(1100,500);
+ctx.stroke();
+ctx.lineTo(650,0);
+ctx.stroke();
+</script> 
+
+</body>
+</html>
+
